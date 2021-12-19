@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./css/superslides.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+
+</head>
+
+<body>
+    <div class="overlay"> </div>
+    <div id="slides">
+        <div class="slides-container">
+            <img src="./images/first.jpg" alt="first">
+            <img src="./images/second.jpg" alt="second">
+            <img src="./images/third.jpg" alt="third">
+        </div>
+
+        <div class="title">
+            <div class="heading">
+                <h1>Yogesh</h1>
+                <p class="typed"></p>
+            </div>
+        </div>
+
+        <nav class="slides-navigation">
+            <a href="#" class="next">
+                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+            </a>
+            <a href="#" class="prev">
+                <ion-icon name="chevron-back-circle-outline"></ion-icon>
+            </a>
+        </nav>
+
+        <!-- <nav class="slides-navigation">
+
+
+            <a href="#" class="prev">
+                <ion-icon name="chevron-back-circle-outline"></ion-icon>
+            </a>
+            <a href="#" class="next">
+                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+            </a>
+        </nav> -->
+    </div>
+
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">YOGESH</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <ion-icon name="menu-outline"></ion-icon>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about_section">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skill_section">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Education_section">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Projects</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+
+    <section id="about_section" data-aos="zoom-in">
+        <div class="container">
+            <div class="row">
+                <h2 class="aboutHeading">ABOUT</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-5 about_left yogeshPic">
+                    <img src="./images/Yogesh1.jpg" alt="profile pic">
+                </div>
+                <div class="col-md-7 about_right ">
+                    <h2>Hi, I am Yogesh</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi facere
+                        exercitationem eos asperiores doloribus! Officiis aspernatur hic autem, eaque, fugiat alias
+                        excepturi officia atque ducimus commodi, beatae maiores necessitatibus. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Illo, rerum quas. Tempora quia optio mollitia ipsum obcaecati
+                        iure eveniet labore minima? Nisi quia sint ex placeat nulla laborum iste obcaecati! Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Omnis illo animi nostrum facere sunt laudantium,
+                        culpa laboriosam aliquam ea voluptate delectus! Expedita totam doloribus illo amet reiciendis
+                        ipsa, voluptates saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                        repudiandae ea tempore nostrum quo eligendi dignissimos quia iusto officia harum neque
+                        asperiores fugiat odio est itaque hic animi voluptatum fugit totam quidem et illo, inventquod
+                        et.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skill_section" class="skills" data-aos="zoom-in-up">
+        <div class="container">
+            <div class="row">
+                <div class="skill_heading col-md-12">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <p>A representaion of my proficiency in each skill</p>
+                    <!-- <p>Slide Left or Right to check more Skills</p> -->
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="skill_pie">
+                        <span class="chart" data-percent="85">
+                            <span class="percent">85</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>HTML</h4>
+                        <p>Good Knowledge of HTML</p>
+                    </div>
+
+                    <div class="skill_pie">
+                        <span class="chart" data-percent="70">
+                            <span class="percent">70</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>CSS</h4>
+                        <p>Good Knowledge of CSS</p>
+                    </div>
+
+                    <div class="skill_pie">
+                        <span class="chart" data-percent="60">
+                            <span class="percent">60</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>JavaScript</h4>
+                        <p>Used Js in many projects</p>
+                    </div>
+
+                    <div class="skill_pie">
+                        <span class="chart" data-percent="60">
+                            <span class="percent">60</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>jQuery</h4>
+                        <p>Know how to use jQuery</p>
+                    </div>
+
+                    <div class="skill_pie">
+                        <span class="chart" data-percent="60">
+                            <span class="percent">60</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>react.js</h4>
+                        <p>Good Knowledge of react.js</p>
+                    </div>
+                </div>
+                <div class="skill_heading col-md-12">
+                    <p>Slide Left or Right to check more Skills</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Education_section" class="Education" data-aos="zoom-in">
+        <div class="container">
+            <div class="row">
+                <h2 class="qualification">EDUCATION</h2>
+            </div>
+        </div>
+
+        <div class="container brMargin">
+            <div class="row middle">
+                <div class="col-md-4 col-sm-6 mobileMargin">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="squareContent">
+                                <h3>MCA</h3>
+                                <h4>Himalyan Gharwal University</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mobileMargin">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="squareContent">
+                                <h3>BCA</h3>
+                                <h4>Kumaun University, Nanital</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mobileMargin">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <ion-icon name="logo-react"></ion-icon>
+                            </div>
+                            <div class="squareContent">
+                                <h3>Web design course</h3>
+                                <h4>Tech altum, Noida Sec-15</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contactSection" data-aos="zoom-in">
+
+        <div class="col-md-12 text-center">
+
+            <p>Like What you see?</p>
+            <h2>I'd love to hear from you</h2>
+            <a href="mailTo:ys85898@gmail.com" class="contactButton">GET IN TOUCH</a>
+
+        </div>
+
+    </section>
+
+
+    <section id="portfolio" data-aos="zoom-in">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="headingPortfolio">
+                    <h2>PROJECTS</h2>
+                </div>
+
+
+                <div class="row featurette topSpace" data-aos="zoom-in">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading"><span class="text-muted">One more Portfolio.</span></h2>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                            style="width: 100%;" src="https://source.unsplash.com/500x400/?code,laptop"
+                            data-holder-rendered="true">
+                    </div>
+                </div>
+                <div class="row featurette topSpace" data-aos="zoom-in">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading"><span class="text-muted">Pig Game.</span></h2>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                            style="width: 100%;" src="https://source.unsplash.com/500x400/?tech"
+                            data-holder-rendered="true">
+                    </div>
+                </div>
+                <div class="row featurette topSpace" data-aos="zoom-in">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading"><span class="text-muted">Guessing the Number Game.</span></h2>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                            style="width: 100%;" src="https://source.unsplash.com/500x400/?laptop,code"
+                            data-holder-rendered="true">
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- <div class="filter">
+                    <ul id="filters">
+
+                        <li><a href="#" data-filetr="*" class="current">All</a></li>
+                        <li><a href="#" data-filetr=".apps">Apps</a></li>
+                        <li><a href="#" data-filetr=".me">Me</a></li>
+                        <li><a href="#" data-filetr=".website">website</a></li>
+
+                    </ul>
+                </div> -->
+
+                <!-- <div class="itemsContainer">
+
+                    <ul class="items">
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+                            <div class="item">
+                                <img src="/portfolio/thumbnails/dog-square.jpeg" alt="dog">
+
+                                <div class="icons">
+                                    <a href="/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="dog"><ion-icon name="expand-outline"></ion-icon></a>
+
+                                    <a href="" target="_blank" class="projectLink"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div> -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <footer>
+            <div class="copyright col-md-12">
+                <p>&copy copyright 2021</p>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+    <script src="./js/jquery.superslides.min.js"></script>
+    <script src="./js/typed.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.easypiechart.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/my.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 180,
+        });
+    </script>
+</body>
+
+</html>

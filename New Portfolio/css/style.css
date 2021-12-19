@@ -1,0 +1,1532 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+
+h1,h2,h3,h4{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 70px;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --primary-color--:#F9F9F9;
+    --secondary-color--:#7564e5;
+    --text-color--:black;
+}
+
+.darkmode{
+    --primary-color--:black;
+    --secondary-color--:#F6D167;
+    --text-color--:#fff;
+}
+
+
+img {
+    vertical-align: bottom;
+  }
+
+body{
+    /* background-color: #F9F9F9; */
+    background-color: var(--primary-color--);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headinghide{
+    display: none;
+}
+
+/*/////////////////////////////Navbar start///////////////////////////// */
+
+.darkicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.darkmodeimage{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--primary-color--);    
+    /* background-color: transparent;
+    backdrop-filter: blur(6px); */
+}
+
+.navshadow{
+    box-shadow: 1px 1px 10px grey;
+    transition: 0.5s;
+}
+
+.logo a{
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 40px;
+    color: var(--secondary-color--);
+}
+
+header a{
+    text-decoration: none;
+    padding: 10px;
+    text-transform: capitalize;
+    color: var(--text-color--);
+    font-weight: bolder;
+    position: relative;
+}
+
+header li a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 9%;
+    height: 6%;
+    width: 0%;
+    background-color: var(--secondary-color--);
+    transition: 0.3s;
+}
+
+header li a:hover::before{
+    width: 80%;
+}
+
+header a:hover{
+    color: var(--secondary-color--);
+}
+
+li{
+    list-style: none;
+    margin: 0 5px;
+}
+
+.navlist{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 40px;
+}
+
+.menu ul li.active1 a{
+    color: var(--secondary-color--);
+}
+.menu ul li.active1 a::before{
+    width: 80%;
+}
+
+.ham{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    display: none;
+}
+
+.ham1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 21px;
+    width: 30px;    
+}
+
+.firstbar{
+    height: 3px;
+    width: 80%;
+    background-color: var(--text-color--);
+    border-radius: 25%;
+
+}
+
+.secondbar{
+    height: 3px;
+    width: 80%;
+    background-color: var(--text-color--);
+    border-radius: 25%;
+}
+
+.thirdbar{
+    height: 3px;
+    width: 80%;
+    background-color: var(--text-color--);
+    border-radius: 25%;
+}
+
+
+
+/* /////////////////////////////navbar end///////////////////////////// */
+
+
+
+
+
+
+
+
+/*/////////////////////////////SECTION 1///////////////////////////// */
+
+/* ?????????????????????? SECOND PART 1 ??????????????????? */
+
+.firstsection1{
+    height: 55vh;
+}
+.banner1{
+    display: flex;
+    align-items: flex-end;
+    height: 55vh;
+    /* height: 100vh; */
+}
+
+.introduction h2{
+    text-transform: capitalize;
+    color: var(--text-color--);
+}
+
+
+.yogesh{
+    text-transform: uppercase;
+    color: var(--secondary-color--);
+    font-size: 35px;
+}
+
+.introduction h2{
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+
+.introduction p{
+    font-size: 30px;
+    word-spacing: 5px;  
+    color: var(--text-color--);  
+}
+
+/* ?????????????????????? SECOND PART 1 END ??????????????????? */
+
+
+/* .firstsection{
+    background-image: url("banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.firstsection::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.introduction{
+    z-index: 1;
+}
+
+.introduction h2{
+    text-transform: capitalize;
+}
+
+.introduction h2{
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+
+.introduction p{
+    font-size: 35px;
+    word-spacing: 5px;    
+}
+
+.yogesh{
+    text-transform: uppercase;
+} */
+/* ///////////////////////////// SECTION 1 END /////////////////////////////*/
+
+
+
+
+
+/*///////////////////////////// ABOUT ME /////////////////////////////*/
+
+
+
+.profilesection{
+    padding-top: 100px;
+}
+
+.yogeshpic{
+    width: 100%;
+}
+
+.profileintro{
+    color: var(--secondary-color--);
+}
+
+.introtext{
+    padding-left: 100px;
+}
+
+.introtext h2{
+    font-size: 40px;
+    color: var(--text-color--);
+}
+
+.introtext p{
+    padding-top: 40px;
+    line-height: 2;
+    color: var(--text-color--);
+}
+
+.tab{
+    margin-top: 30px;
+    color: var(--text-color--);
+}
+
+.tab th{
+    text-align: left;
+    padding-right: 20px;
+}
+
+.tab td{
+    padding: 10px 0;
+}
+/*///////////////////////////// ABOUT ME END ///////////////////////////// */
+
+
+
+
+/* ///////////////////////////// QUALIFICATIONS /////////////////////////////*/
+#qualifications h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: var(--text-color--);
+}
+
+.qualheading{
+    color: var(--secondary-color--);
+}
+
+
+.shadow{
+    /* background-color: #fff; */
+    background-color: var(--primary-color--); 
+    box-shadow: 2px 2px 10px grey;
+    padding: 50px 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.qualcard{
+    overflow: hidden;
+    padding: 20px 30px;
+    color: var(--text-color--); 
+}
+
+.shadow:hover{
+    transform: scale(1.1);
+}
+
+.degreeimage{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.fas{
+    font-size: 40px;
+}
+
+.degreetext{
+    text-align: center;
+}
+
+.degreetext h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+/* ///////////////////////////// QUALIFICATIONS END ///////////////////////////// */
+
+
+
+/* ///////////////////////////// MY SKILLS ///////////////////////////// */
+
+#skills h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: var(--text-color--);
+}
+.skillheading{
+    color: var(--secondary-color--); 
+}
+
+.codersvg{
+    width: 100%;
+}
+
+.iconflex{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#skills h3{
+    padding: 0 0 5px 10px;
+    color: var(--text-color--);
+}
+
+.icon{
+    font-size: 30px;
+    padding: 10px 0 5px 0 ;
+    transform: translate(0,-10%);
+}
+
+ .skillcontainer{
+    padding: 0 20px;
+}
+
+
+.firstskill{
+    padding-bottom: 10px;
+}
+
+
+.htmllogo .icon{
+    color: var(--secondary-color--);
+}
+
+.htmllogo .skillpercent1{
+    background-color: #57837B;
+}
+
+.csslogo .icon{
+    color: #FFA900;
+}
+
+.csslogo .skillpercent2{
+    background-color: #FFA900;
+}
+
+.javascriptlogo .icon{
+    color: #A3A847;
+}
+.javascriptlogo .skillpercent3{
+    background-color: #A3A847;
+}
+
+.jquerylogo .icon{
+    color: #290149;
+}
+.jquerylogo .skillpercent3{
+    background-color: #290149;
+}
+.reactlogo .icon{
+    color: #FF3F00;
+}
+.reactlogo .skillpercent3{
+    background-color: #FF3F00;
+}
+
+
+
+.skillmeter{
+    height: 5px;
+    width: 90%;
+    background-color: #ddbaba;
+    border-radius: 50px;
+}
+
+.skillpercent1{
+    height: 5px;
+    width: 85%;
+    border-radius: 50px;
+}
+
+.skillpercent2{
+    height: 5px;
+    width: 80%;
+    border-radius: 50px;
+}
+
+.skillpercent3{
+    height: 5px;
+    width: 60%;
+    border-radius: 50px;
+} 
+
+
+/* ///////////////////////////// MY SKILLS END ///////////////////////////// */
+
+
+
+
+/* ///////////////////////////// HIRE ME ///////////////////////////// */
+
+.hireme{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./first.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 50vh;
+    margin-top: 100px;
+}
+
+.hiremetext{
+    text-align: center;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hiremetext h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.hiremetext a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.hiremetext a:hover{
+    background-color: var(--secondary-color--);
+    border: 1px solid var(--secondary-color--);
+    box-shadow: 1px 1px 10px black;
+}
+
+/* ///////////////////////////// HIRE ME END ///////////////////////////// */
+
+
+
+
+/* ///////////////////////////// PORTFOLIO SECTION ///////////////////////////// */
+
+.portimg{
+    margin-top: 100px;
+}
+
+.portimg h2{
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: var(--text-color--);
+}
+
+.portimg p{
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--text-color--);
+}
+
+.portfolioheading{
+    color: var(--secondary-color--);
+}
+
+.portimg ul{
+    display: flex;
+    margin: 20px 0 50px 0;
+    justify-content: center;
+}
+
+.portimg ul li{
+    padding: 10px 20px;
+    background-color: #eee;
+    cursor: pointer;
+    margin: 0 15px;
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color--);
+}
+
+.portimg ul li:hover{
+    background-color: var(--secondary-color--);
+    color: #fff;
+}
+
+.portimg ul li.active{
+    background-color: var(--secondary-color--);
+    color: #fff;
+}
+
+.itembox{
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.itembox img{
+    width: 100%;
+}
+
+.itembox:hover{
+    transform: scale(1.1);
+}
+
+.crossbutton{
+    display: flex;
+    justify-content: flex-end;
+    width: 55vw;
+    color: blanchedalmond;
+    font-size: 15px;
+}
+
+.crossbutton .cross{
+    cursor: pointer;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.overlayshow{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.overlaycontainer{
+    height: 80%;
+    width: 50vw;
+}
+
+/* ///////////////////////////// PORTFOLIO SECTION END ///////////////////////////// */
+
+
+/* ///////////////////////////// PROJECTS ///////////////////////////// */
+
+
+#projects h2{
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    color: var(--text-color--);
+}
+
+.projectheading{
+    color: var(--secondary-color--);
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.cardimage{
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cardimage img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.cardimage img:hover{
+    transform: scale(1.5);
+}
+
+.cardtext{
+    padding: 20px;
+    background-color: var(--primary-color--); 
+    color: var(--text-color--); 
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cardtext h3{
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+}
+
+.cardtext p{
+    padding-bottom: 20px;
+}
+
+.cardtext a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border: 1px solid  var(--secondary-color--);
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--secondary-color--);
+}
+
+.cardtext a:hover{
+    background-color: var(--secondary-color--);
+    border: 1px solid var(--secondary-color--);
+    /* box-shadow: 1px 1px 10px rgb(26, 24, 24); */
+    box-shadow: 1px 1px 5px grey;
+}
+
+
+/* ///////////////////////////// PROJECTS END ///////////////////////////// */
+
+
+
+/* ///////////////////////////// COPYRIGHT ///////////////////////////// */
+
+#copyright{
+    margin-top: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* ///////////////////////////// COPYRIGHT END ///////////////////////////// */
+
+
+/* ///////////////////////////// TOP BUTTON ///////////////////////////// */
+
+.topscroll{
+    position: fixed;
+    right: 2%;
+    bottom: 20%;
+    /* background-color: #7564e5; */
+    background-color: var(--secondary-color--);
+    align-items: center;
+    justify-content: center;
+    border:none;
+    display: none;
+    transition: 0.5s;
+    border-radius: 50px;
+    outline: none;
+}
+
+
+.topicon{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.topscrollshow{
+    display: flex;
+}
+
+
+/* ///////////////////////////// TOP BUTTON END ///////////////////////////// */
+
+
+
+
+/* ///////////////////////////// MEDIA QUERIES ///////////////////////////// */
+
+
+
+
+@media screen and (max-width:600px) and (orientation: portrait) {
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+
+.column-half-1 {
+    float: left;
+}
+.column-half-2 {
+    float: right;
+}
+
+.darkicon{
+    justify-content: flex-end;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+}
+
+#paracent{
+    text-align: center;
+}
+
+/* ///////////////////////////// NAV ///////////////////////////// */
+
+.logo a{
+    font-size: 25px;
+}
+
+.navlist{
+    flex-direction: column;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.menu{
+    display: none; 
+}
+
+
+li{
+    margin: 5px 0;   
+}
+
+.ham{
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translateY(10px);
+}
+
+.logo{
+    font-size: 20px;
+}
+
+
+.firstbar1  {
+    transform: rotate(
+-45deg
+) translate(-12px, -1px);
+    transition: 0.5s;
+}
+
+.secondbar1 {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.thirdbar1 {
+    transform: rotate(
+42deg
+) translate(-11px, 2px);
+    transition: 0.5s;
+}
+
+.show_nav{
+    display: block; 
+    text-align: center;
+}
+
+/* ///////////////////////////// NAV DARK MODE ICON /////////////////////////// */
+
+.column-half-1 {
+    float: left;
+}
+.column-half-2 {
+    float: right;
+}
+
+.darkicon{
+    justify-content: flex-end;
+}
+
+
+
+/* ///////////////////////////// NAV BAR END ///////////////////////////// */
+
+
+/* ///////////////////////////// SECTION 1 ///////////////////////////// */
+
+
+
+.introduction h2{
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.introduction p{
+    font-size: 22px;
+    word-spacing: 2px;    
+}
+
+
+
+/* ///////////////////////////// PROFILE SECTION ///////////////////////////// */
+
+
+.profilesection{
+    padding-top: 50px;
+}
+
+.introtext{
+    padding: 0 15px;
+}
+
+.introtext h2{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.introtext p{
+    padding-top: 30px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.8;
+
+}
+
+.yogesh{
+    font-size: 22px;
+}
+
+/* ///////////////////////////// PROFILE SECTION END ///////////////////////////// */
+
+
+/* ///////////////////////////// QUALIFICATION SECTION ///////////////////////////// */
+
+#qualifications h2{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.fas{
+    font-size: 30px;
+}
+
+
+.degreetext h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ///////////////////////////// QUALIFICATION SECTION END ///////////////////////////// */
+
+
+/* ///////////////////////////// MY SKILLS ///////////////////////////// */
+
+#skills h2{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#skills h3{
+    padding: 0 0 5px 10px;
+    font-size: 17px;
+}
+
+
+/* ///////////////////////////// MY SKILLS END ///////////////////////////// */
+
+
+/* ///////////////////////////// HIRE ME ///////////////////////////// */
+
+.hireme{
+    height: 30vh;
+    margin-top: 80px;
+}
+
+.hiremetext{
+    text-align: center;
+    color: #fff;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hiremetext h2{
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.hiremetext a{
+    padding: 5px 8px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+/* ///////////////////////////// HIRE ME END ///////////////////////////// */
+
+
+
+/* ///////////////////////////// PORTFOLIO ///////////////////////////// */
+.portimg h2{
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+.portimg p{
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.portimg ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px 0 10px 0;
+    justify-content: center;
+}
+
+.portimg ul li{
+    padding: 5px 10px;
+    background-color: #eee;
+    cursor: pointer;
+    margin: 10px 5px;
+    border-radius: 25px;
+    border: 1px solid #7564e5;
+    font-size: 13px;
+}
+
+
+.portimg{
+    margin-top: 40px;
+}
+
+
+.overlaycontainer{
+    height: 50%;
+    width: 70vw;
+}
+
+.crossbutton{ 
+    width: 75vw;
+    color: blanchedalmond;
+    font-size: 15px;
+}
+/* ///////////////////////////// PORFOLIO END ///////////////////////////// */
+
+
+/* ///////////////////////////// PROJECTS ///////////////////////////// */
+
+#projects h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.cardtext h3{
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.cardtext p{
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.cardtext h3{
+    font-size: 21px;
+}
+
+.cardtext a{
+    padding: 7px 15px;
+    font-size: 13px;
+}
+
+/* ///////////////////////////// PROJECTS END ///////////////////////////// */
+
+
+/* ///////////////////////////// COPYRIGHT ///////////////////////////// */
+
+#copyright p{
+    font-size: 15px;
+text-align: center;
+}
+
+/* ///////////////////////////// COPYRIGHT END ///////////////////////////// */
+
+}
+
+
+
+@media (min-width:630px) and (max-width:830px) and (orientation: landscape)  {
+
+    .col-sm-ls-1 {width: 8.33%;}
+    .col-sm-ls-2 {width: 16.66%;}
+    .col-sm-ls-3 {width: 25%;}
+    .col-sm-ls-4 {width: 33.33%;}
+    .col-sm-ls-5 {width: 41.66%;}
+    .col-sm-ls-6 {width: 50%;}
+    .col-sm-ls-7 {width: 58.33%;}
+    .col-sm-ls-8 {width: 66.66%;}
+    .col-sm-ls-9 {width: 75%;}
+    .col-sm-ls-10 {width: 83.33%;}
+    .col-sm-ls-11 {width: 91.66%;}
+    .col-sm-ls-12 {width: 100%;}
+
+
+    p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    /* ///////////////////////////// NAV ///////////////////////////// */
+
+    .logo a{
+        font-size: 22px;
+    }
+
+      
+    .menu li{
+        margin: 0 3px;
+        font-size: 10px;
+    }
+
+
+ /* ///////////////////////////// NAV END ///////////////////////////// */
+
+
+ /* ///////////////////////////// FISRT SECTION ///////////////////////////// */
+    
+    .firstsection1{
+        height: 60vh;
+    }
+
+    .banner1{
+        display: flex;
+        align-items: flex-end;
+        height: 60vh;
+    }
+
+    .introduction h2{
+        font-size: 22px;
+    }
+
+    .introduction p{
+        font-size: 20px;
+    }
+
+    .introduction .yogesh{
+        font-size: 22px;
+    }
+
+/* ///////////////////////////// FIESRT SECTION END ///////////////////////////// */
+
+/* ///////////////////////////// ABOUT SECTION ///////////////////////////// */
+
+.profilesection{
+    padding-top: 50px;
+}
+
+.introtext h2{
+    font-size: 25px;
+}
+
+.introtext p{
+    padding-top: 20px;
+    line-height: 2;
+}
+
+.introtext{
+    padding-left: 50px;
+}
+
+
+/* ///////////////////////////// ABOUT SECTION END ///////////////////////////// */
+
+
+/* ///////////////////////////// QUAL ///////////////////////////// */
+
+#qualifications h2{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.fas{
+    font-size: 30px;
+}
+
+.degreetext h3{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+/* ///////////////////////////// QUAL END ///////////////////////////// */
+
+
+/* ///////////////////////////// MY SKILLS ///////////////////////////// */
+
+#skills h2{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+#skills h3{
+    padding: 0 0 5px 10px;
+    font-size: 16px;
+}
+
+
+/* ///////////////////////////// MY SKILLS END ///////////////////////////// */
+
+/* ///////////////////////////// HIRE ME ///////////////////////////// */
+
+.hireme{
+    margin-top: 50px;
+}
+
+.hiremetext h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.hiremetext a{
+    padding: 7px 15px;
+    font-size: 13px;
+}
+
+
+/* ///////////////////////////// HIRE ME END ///////////////////////////// */
+
+
+/* ///////////////////////////// PORTFOLIO SECTION ///////////////////////////// */
+
+.portimg{
+    margin-top: 50px;
+}
+
+.portimg h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.portimg p{
+    margin-bottom: 25px;
+}
+
+.portimg ul{
+    margin: 20px 0 20px 0;
+}
+
+.portimg ul li{
+    padding: 8px 15px;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+/* ///////////////////////////// PORTFOLIO SECTION END ///////////////////////////// */
+
+
+
+/* ///////////////////////////// PROJECTS ///////////////////////////// */
+
+#projects h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.cardtext h3{
+    font-size: 21px;
+}
+
+.cardtext a{
+    padding: 7px 15px;
+    font-size: 13px;
+}
+
+
+.cardthird{
+    transform: translate(50%,0%);
+}
+
+/* ///////////////////////////// PROJECTS ///////////////////////////// */
+
+/* ///////////////////////////// COPYRIGHT ///////////////////////////// */
+
+#copyright p{
+    font-size: 14px;
+}
+
+/* ///////////////////////////// COPYRIGHT END ///////////////////////////// */
+
+}
+
+@media (min-width:600px) and (max-width:768px) and (orientation: portrait) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    .logo a{
+        font-size: 22px;
+    }
+
+
+    header a{
+        text-decoration: none;
+        padding: 10px 5px;
+        text-transform: capitalize;
+        color: black;
+        font-weight: bolder;
+        position: relative;
+    }
+      
+    .menu li{
+        margin: 0 3px;
+        font-size: 10px;
+    }
+
+
+/* ///////////////////////////// FIRST SECTION ///////////////////////////// */
+
+    .firstsection1{
+        height: 30vh;
+    }
+    .banner1{
+        display: flex;
+        align-items: flex-end;
+        height: 30vh;
+    }
+
+    /* .introduction h2{
+        font-size: 22px;
+    }
+
+    .introduction p{
+        font-size: 20px;
+    }
+
+    .introduction .yogesh{
+        font-size: 22px;
+    } */
+
+/* ///////////////////////////// FIRST SECTION END ///////////////////////////// */
+
+
+
+/* ///////////////////////////// PROFILE SECTION ///////////////////////////// */
+
+.profilesection{
+    padding-top: 50px;
+}
+
+.introtext{
+    padding: 0 35px;
+}
+
+.introtext h2{
+    margin-top: 15px;
+}
+
+.introtext p{
+    padding-top: 30px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* ///////////////////////////// PROFILE SECTION END ///////////////////////////// */
+
+
+
+/* ///////////////////////////// PORTFOLIO ///////////////////////////// */
+
+.portimg h2{
+        margin-top: 80px;
+}
+
+.portimg{
+        margin-top: 50px;
+}
+    
+.portimg p{
+        margin-bottom: 30px;
+}
+
+.overlaycontainer{
+    height: 60%;
+    width: 80vw;
+}
+
+.crossbutton{ 
+    width: 85vw;
+    color: blanchedalmond;
+    font-size: 15px;
+}
+
+/* ///////////////////////////// PORFOLIO END ///////////////////////////// */
+
+
+/* ///////////////////////////// HIRE ME ///////////////////////////// */
+
+.hireme{
+    height: 30vh;
+    margin-top: 80px;
+}
+
+.hiremetext{
+    text-align: center;
+    color: #fff;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ///////////////////////////// HIRE ME END ///////////////////////////// */
+
+
+
+/* ///////////////////////////// PROJECTS ///////////////////////////// */
+
+#projects h2{
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.cardthird{
+    transform: translate(50%);
+}
+/* ///////////////////////////// PROJECTS END ///////////////////////////// */
+
+}
+
+
+
+/* //////////////////////////////// I-PAD & PRO PORTRAIT /////////////////////////////// */
+
+
+@media (min-width:768px) and (max-width:1025px) and (orientation: portrait){
+    .col-md-ls-1 {width: 8.33%;}
+    .col-md-ls-2 {width: 16.66%;}
+    .col-md-ls-3 {width: 25%;}
+    .col-md-ls-4 {width: 33.33%;}
+    .col-md-ls-5 {width: 41.66%;}
+    .col-md-ls-6 {width: 50%;}
+    .col-md-ls-7 {width: 58.33%;}
+    .col-md-ls-8 {width: 66.66%;}
+    .col-md-ls-9 {width: 75%;}
+    .col-md-ls-10 {width: 83.33%;}
+    .col-md-ls-11 {width: 91.66%;}
+    .col-md-ls-12 {width: 100%;}
+
+    .firstsection1{
+        height: 30vh;
+    }
+    .banner1{
+        display: flex;
+        align-items: flex-end;
+        height: 30vh;
+      
+    }
+
+    .hireme{
+        height: 30vh;
+    }
+
+    .hiremetext{
+        text-align: center;
+        color: #fff;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
+
+
+
+
+
+
+   
