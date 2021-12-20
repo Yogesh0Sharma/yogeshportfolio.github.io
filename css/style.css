@@ -1173,8 +1173,6 @@ footer{
 }
 
   .show_nav {
-    display: block;
-    transition: 0.3s; 
     width: 50%;
     display: block;
     background-color: #f7f2f2;
