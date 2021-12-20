@@ -110,7 +110,7 @@ nav {
 }
 
 .navbackground{
-  background-color: white;
+  background-color: #f7f2f2;
   box-shadow: 1px 1px 4px grey;
   transition: 1s;
 }
@@ -1150,8 +1150,11 @@ footer{
   }
 
   .navmenu {
-    height: 0vh;
+    width: 0%;
     display: none;
+    position: absolute;
+    top: 8rem;
+    right: 0;
   }
 
   .newbar1 {
@@ -1170,10 +1173,11 @@ footer{
 }
 
   .show_nav {
-    height: 100vh;
     display: block;
-    transition: 0.3s;
-    background-color: white;
+    transition: 0.3s; 
+    width: 50%;
+    display: block;
+    background-color: #f7f2f2;
   }
 
   .aboutText {
