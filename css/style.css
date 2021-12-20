@@ -1087,7 +1087,9 @@ footer{
   html {
     font-size: 50%;
   }
-
+  .custom-shape-divider-bottom-1632923256 {
+    position: absolute;
+}
   .col-sm-1 {
     width: 8.33%;
   }
