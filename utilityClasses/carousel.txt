@@ -1,0 +1,130 @@
+HEAD            
+ <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+_____________________________________________________________________________________________
+
+HTML
+
+<section id="section_5">
+        <div class="container carousel">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <h2>Tradational cousine made easy</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In pariatur quidem eveniet
+                            architecto
+                            officiis velit minima quibusdam, sunt aspernatur dolores culpa perferendis fuga veritatis
+                            expedita magni esse quos sint commodi?</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Tradational cousine made easy</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In pariatur quidem eveniet
+                            architecto
+                            officiis velit minima quibusdam, sunt aspernatur dolores culpa perferendis fuga veritatis
+                            expedita magni esse quos sint commodi?</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Tradational cousine made easy</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In pariatur quidem eveniet
+                            architecto
+                            officiis velit minima quibusdam, sunt aspernatur dolores culpa perferendis fuga veritatis
+                            expedita magni esse quos sint commodi?</p>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div id="pagi" class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+        </div>
+    </section>
+
+__________________________________________________________________________________
+
+
+CSS
+
+#section_5{
+    background-color: #d4d8d9;
+    padding-top: 8.4rem;
+    padding-bottom: 5.5rem;
+}
+
+.swiper-slide{
+    text-align: center;
+}
+
+    .swiper-slide h2{
+        font-family: 'raleway', sans-serif;
+        font-weight: 700;
+        font-size: 2.6rem;
+        padding-bottom: 3rem;
+    }
+    
+    .swiper-slide p{
+        font-family: 'raleway', sans-serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+        margin-bottom: 4rem;
+    }
+
+
+#pagi{
+    position: static;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #2a3b40;
+}
+
+
+    .swiper {
+        width: 60%;
+        /* height: fit-content; */
+      }
+
+______________________________________________________________________________________
+
+QUERY
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // speed:1000,
+    // timelapse:1,
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+      },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });

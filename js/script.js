@@ -8,7 +8,7 @@ ham.addEventListener("click", function(){
     bar1.classList.toggle("newbar1");
     bar2.classList.toggle("newbar2");
     bar3.classList.toggle("newbar3");
-    nav.classList.toggle("show_nav"); 
+    nav.classList.toggle("show_nav");
     
 });
 
@@ -95,3 +95,4 @@ let currDate1 = currDate.getFullYear();
 let date = document.querySelector(".date");
 
 date.textContent = currDate1;
+
