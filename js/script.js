@@ -89,10 +89,10 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
-let currDate = new Date();
-let currDate1 = currDate.getFullYear();
+// let currDate = new Date();
+// let currDate1 = currDate.getFullYear();
 
-let date = document.querySelector(".date");
+// let date = document.querySelector(".date");
 
-date.textContent = currDate1;
+// date.textContent = currDate1;
 
