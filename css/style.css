@@ -1042,8 +1042,9 @@ input{
   color: #ffffff;
   background-color: #2a3b40;
   margin-bottom: 3.7rem;
-  padding-left: .2rem;
-  padding-right: .2rem;
+  /* padding-left: .2rem;
+  padding-right: .2rem; */
+  padding: 2rem 1.2rem;
 }
 
 textarea{
@@ -1057,8 +1058,9 @@ textarea{
   color: #ffffff;
   background-color: #2a3b40;
   margin-bottom: 3.7rem;
-  padding-left: .2rem;
-  padding-right: .2rem;
+  /* padding-left: .2rem;
+  padding-right: .2rem; */
+  padding: 2rem 1.2rem;
   resize: none;
 }
 
@@ -1070,6 +1072,14 @@ textarea{
 
 .sbt_btn{
   cursor: pointer;
+  line-height: 0rem;
+}
+
+.sbt_btn:hover{
+  background: #dcdcdca1;
+  color: black;
+  border: 2px solid #dcdcdca1;
+  transition: 0.2s;
 }
 
 footer{
